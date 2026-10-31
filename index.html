@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMART INDIA</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f6ff;
+    color: #18345d;
+}
+
+header {
+    background: #123b78;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    border-bottom: 4px solid #4da3ff;
+}
+
+nav {
+    background: #092957;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 9px;
+}
+
+.hero {
+    padding: 50px 15px;
+    text-align: center;
+    background: #dceaff;
+}
+
+section {
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.service, .login-box {
+    background: white;
+    padding: 22px;
+    margin: 15px auto;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+button {
+    background: #123b78;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 9px 0;
+    border: 1px solid #b5c8e5;
+    border-radius: 7px;
+}
+
+footer {
+    background: #123b78;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+#message {
+    color: #123b78;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 SMART INDIA</h1>
+    <p>Technology Company 🇮🇳</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#account">Login</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Building India's Technology Future</h2>
+    <p>Innovation, Technology and Research.</p>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to SMART INDIA. Exploring new technology ideas.</p>
+</section>
+
+<section id="services">
+    <h2>Our Interests</h2>
+
+    <div class="service">
+        <h3>💻 Software Development</h3>
+        <p>Creating digital solutions.</p>
+    </div>
+
+    <div class="service">
+        <h3>🛰️ Satellite Technology</h3>
+        <p>Exploring satellite communication.</p>
+    </div>
+
+    <div class="service">
+        <h3>🤖 Innovation</h3>
+        <p>Exploring new ideas.</p>
+    </div>
+</section>
+
+<section id="account">
+    <h2>My Account</h2>
+
+    <div class="login-box">
+        <h3>Login / Sign Up</h3>
+
+        <input type="email"
+        id="email"
+        placeholder="Enter your email">
+
+        <input type="password"
+        id="password"
+        placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+
+        <button onclick="signup()">Sign Up</button>
+
+        <p id="message"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 SMART INDIA</p>
+    <p>Building a Smarter Future 🇮🇳</p>
+</footer>
+
+<script>
+function login() {
+    document.getElementById("message").innerText =
+    "Demo Login Page is working!";
+}
+
+function signup() {
+    document.getElementById("message").innerText =
+    "Demo Signup Page is working!";
+}
+</script>
+
+</body>
+</html>
